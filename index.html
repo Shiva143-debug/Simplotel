@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <section class="container1">
+        <header>
+            <div class="empty"></div>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#food">Food</a></li>
+                    <li><a href="#restuarant">Restuarant</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fab fa-whatsapp icon"></i>
+                <i class="fas fa-shopping-cart icon"></i>
+            </div>
+        </header>
+        <section class="background">
+            <div class="content-box">
+                <h1>LOREM IPSUM</h1>
+                <p>Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type
+                    specimen book</p>
+            </div>
+        </section>
+        <section class="footer"></section>
+    </section>
+    <hr style="height: 20px;" />
+    <section class="container2">
+        <section class="order">
+            <h1 class="order-heading">Order Now</h1>
+
+            <div class="boxes">
+                <div class="box1">
+                    <img class="image"
+                        src="https://res.cloudinary.com/dxgbxchqm/image/upload/v1721883277/img4_nhjfok.jpg"
+                        alt="box1" />
+                    <h4>Burger</h4>
+                    <p>Lorem Ipsum has been the
+                        industry's standard dummy text
+                    </p>
+                </div>
+                <div class="box2">
+                    <img class="image"
+                        src="https://res.cloudinary.com/dxgbxchqm/image/upload/v1721883266/img2_uvle8c.jpg"
+                        alt="box1" />
+                    <h4>PIZZA</h4>
+                    <p>Lorem Ipsum has been the
+                        industry's standard dummy text
+                    </p>
+                </div>
+                <div class="box3">
+                    <img class="image"
+                        src="https://res.cloudinary.com/dxgbxchqm/image/upload/v1721883270/img3_qnz785.jpg"
+                        alt="box1" />
+                    <h4>PASTA</h4>
+                    <p>Lorem Ipsum has been the
+                        industry's standard dummy text
+                    </p>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="button">Order</button>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navList = document.getElementById('nav-list');
+
+            menuToggle.addEventListener('click', function () {
+                navList.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
